@@ -35,7 +35,8 @@ ms.dyn365.ops.version: 8.1.1
 Self-service deployment is available for Dynamics 365 for Finance and Operations **Tier 2 through 5** cloud environments. Self-service deployment enables easier deployment and significantly reduced deployment times.
 
 > [!Important]
-> We are rolling out this experience in waves. At this time, this experience is available only to **new customers** signing up for Finance and Operations. There is no change to the experience our current customers have with existing environments.
+> This update will be released incrementally, based on your Azure country/region. However at this time, this experience is only available for **new customers** signing up for Finance and Operations. There is no change to the experience for our current customers with existing environments. 
+
 >
 > Note that not all new customers signing up for Finance and Operations will see the experience. We will gradually increase the number of new customers seeing this experience.
 
@@ -43,21 +44,21 @@ Self-service deployment is available for Dynamics 365 for Finance and Operations
 
 Customers using the self-service capabilities will see the following changes in their LCS experience. 
 
-- Deployment is self-service and can be completed within an average time of 30 minutes. There are no longer lead times and wait times for deployment. You can control when you deploy, and verify that the environment is deployed. This experience is the same as the current experience. 
+- Deployment is self-service and can be completed within an average time of 30 minutes. There are no longer lead times and wait times for deployment. You can control when you deploy, and verify that the environment is deployed. This experience is the same as the current experience. Please see the [self-service deployment FAQ](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/deployment/deploymentfaq) for more details.
 
    ![Deployment settings](media/deployment-settings.png)
 
-- You will no longer have remote desktop access to the Tier 2+ sandbox environments. All operations that need remote desktop access are now available as self-service actions. The following image shows some of the operations in the environment’s **Maintain** \> **Move database menu option**. 
+- You will no longer have remote desktop access to the Tier 2+ sandbox environments. All operations that need remote desktop access are now available as self-service actions. The following image shows some of the operations in the environment’s **Maintain** \> **Move database menu option**. Please see the [maintenance operations](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/deployment/maintenanceoperationsguide-newinfrastructure) topic for details.
 
    > [!Important]
    > Remote desktop access will be restricted only to environments deployed using the self-service deployment. There is no change to existing environments or existing customers.
 
    ![Self-service actions](media/Self-service-actions.png)
 
-- The diagnostics capabilities will remain the same, which enables troubleshooting without remote desktop access.
+- The diagnostics capabilities will remain the same, which enables troubleshooting without remote desktop access. Please see the [diagnosis article] (https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/deployment/troubleshoot-newinfrastructure) for more details.
 
    ![Environment monitoring](media/environment-monitoring.png)
 
-- You will not have SQL Server access on Tier 2+. You will continue to have SQL database access using just-in-time access.
+- You will not have SQL Server access on Tier 2+. You will continue to have SQL database access using just-in-time access.Please see the "access database" topic in the article for [maintenance operations.](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/deployment/maintenanceoperationsguide-newinfrastructure)
 
 - You will need to provide a combined deployable package for customizations. Delta packages will not be supported. This was always a recommended best practice and is now enforced.
